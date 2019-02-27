@@ -1,0 +1,10 @@
+percent = int(input())
+doll = int(input())
+cents = int(input())
+totalCents = doll * 100 + cents
+print(totalCents)
+percentAfterYear = totalCents + (totalCents * percent / 100)
+print(percentAfterYear)
+dollAfterYear = int(percentAfterYear // 100)
+centsAfterYear = int(percentAfterYear % 100)
+print(dollAfterYear, centsAfterYear)
